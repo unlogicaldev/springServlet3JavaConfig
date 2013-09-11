@@ -163,6 +163,7 @@ public class AuthServiceImplTest extends BaseTest {
 		try {
 			/*
 			 * 1초 지연 후에는 기존 키를 사용할 수 없다. 재발급 절차에 따라 재발급 로직을 수행해야한다.
+			 * 테스트를 위해 1초로 설정함. 정책에 따라 적당한 시간설정 해서 사용하면 됨.
 			 */
 			auth = authService.getAuthInfo(newKey);
 			
