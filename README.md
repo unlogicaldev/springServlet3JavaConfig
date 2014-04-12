@@ -11,7 +11,7 @@ JBUG_KOREA 소모임 [자바웹개발 나머지 절반]
 6. Spring Cache abstraction
 7. 인증키 갱신 시스템 ( Authentication key update system ).
 
-2014. 04. 12
+2014.04.12
 
 1. mongoDB 튜토리얼
 2. PostgresSql 추가
