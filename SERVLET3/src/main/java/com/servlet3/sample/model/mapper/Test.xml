@@ -3,9 +3,13 @@
 
 <mapper namespace="Test" >
 	<select id="selectTestList" parameterType="DBObject" resultType="DBObject">
+		SELECT GM_CODE AS GAME_CODE,GM_NAME AS GAME_NAME
+		FROM tb_game
+	</select>
+	<select id="selectTestListPost" parameterType="DBObject" resultType="DBObject">
 		select
-			id,test
-		from TEST
+			*
+		from rhq_advisory
 	</select>
 	<select id="selectTest" parameterType="String" resultType="DBObject">
 		select id, test from TEST where id = #{id}

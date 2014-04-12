@@ -13,4 +13,7 @@ public interface TestService {
 	void insertTest(DBObject o) throws Exception;
 	
 	void updateTeset(DBObject o) throws Exception;
+	
+	List<DBObject> selectTestListPost(DBObject o) throws Exception;
+	
 }

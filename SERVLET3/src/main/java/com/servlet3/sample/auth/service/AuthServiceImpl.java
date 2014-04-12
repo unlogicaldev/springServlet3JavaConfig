@@ -14,7 +14,7 @@ import com.mongodb.DBObject;
 import com.servlet3.sample.common.abs.AbstractBaseService;
 import com.servlet3.sample.common.util.MD5Generator;
 
-@Service("authService")
+//@Service("authService")
 public class AuthServiceImpl extends AbstractBaseService<AuthServiceImpl>
 		implements AuthService {
 	

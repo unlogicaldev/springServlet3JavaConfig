@@ -17,7 +17,13 @@ public class TestServiceImpl extends AbstractBaseService<TestServiceImpl>
 	public List<DBObject> selectTestList(DBObject o) throws Exception {
 		return commonSql.selectList("Test.selectTestList", o);
 	}
-
+	
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<DBObject> selectTestListPost(DBObject o) throws Exception {
+		return commonSqlPost.selectList("Test.selectTestListPost", o);
+	}
+	
 	@Override
 	@Cacheable(value = "default", key = "#id")
 	public DBObject selectTest(String id) throws Exception {

@@ -10,23 +10,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 
-@Repository("commonSql")
-public class CommonSqlDaoImpl  implements CommonSqlDao{
+@Repository("commonSqlPost")
+public class CommonSqlDaoPostImpl  implements CommonSqlDao{
 	
 	private SqlSession sqlSession;
 
     private boolean externalSqlSession;
 
     @Autowired(required = false)
-    public final void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
+    public final void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory2) {
         if (!this.externalSqlSession) {
-            this.sqlSession = new SqlSessionTemplate(sqlSessionFactory);
+            this.sqlSession = new SqlSessionTemplate(sqlSessionFactory2);
         }
     }
 
     @Autowired(required = false)
-    public final void setSqlSessionTemplate(SqlSessionTemplate sqlSession) {
-        this.sqlSession = sqlSession;
+    public final void setSqlSessionTemplate(SqlSessionTemplate sqlSession2) {
+        this.sqlSession = sqlSession2;
         this.externalSqlSession = true;
     }
     

@@ -55,6 +55,11 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>${mongo.driver.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>com.google.code.morphia</groupId>
+			<artifactId>morphia</artifactId>
+			<version>0.99</version>
+		</dependency>
 		
 		<!-- Infinispan -->
 		<dependency>
@@ -130,10 +135,22 @@
             <version>${spring.version}</version>
             <scope>test</scope>
         </dependency>
-        
+        <!-- postgresql driver -->
+        <dependency>
+			<groupId>postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>9.1-901.jdbc4</version>
+		</dependency>
         
 	</dependencies>
 	
+	<repositories>
+		<repository> 
+            <id>morphia.googlecode.com</id> 
+            <name>Morphia Repo at Google Code</name> 
+            <url>http://morphia.googlecode.com/svn/mavenrepo</url> 
+		</repository> 
+	</repositories>
 	
 	
 

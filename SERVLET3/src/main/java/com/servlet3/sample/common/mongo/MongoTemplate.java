@@ -68,7 +68,7 @@ public class MongoTemplate {
 	/**
 	 * <PRE>
 	 * 1. MethodName	:	getDBCollection
-	 * 2. Comment		:	
+	 * 2. Comment		:	DBCollection
 	 * 3. 작성자			:	goodrhys
 	 * 4. 작성일			:	2013. 8. 20.	오전 10:35:20
 	 * </PRE>
@@ -78,5 +78,20 @@ public class MongoTemplate {
 	 */
 	public static DBCollection getDBCollection(String collectionName){
 		return db.getCollection(collectionName);
+	}
+	
+	/**
+	 * <PRE>
+	 * 1. MethodName	:	getDB
+	 * 2. Comment		:   DB 
+	 * 3. 작성자			:	goodrhys
+	 * 4. 작성일			:	2013. 12. 12.	오후 9:28:56
+	 * </PRE>
+	 *
+	 *	@param collectionName
+	 *	@return
+	 */
+	public static DB getDB(){
+		return db;
 	}
 }

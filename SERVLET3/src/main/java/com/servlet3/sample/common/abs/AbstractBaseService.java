@@ -17,6 +17,9 @@ public abstract class AbstractBaseService<T> {
 	@Autowired
 	protected CommonSqlDao commonSql;
 	
+	@Autowired
+	protected CommonSqlDao commonSqlPost;
+	
 	protected DBCollection getDBCollection(String collectionName) {
 		return MongoTemplate.getDBCollection(collectionName);
 	}

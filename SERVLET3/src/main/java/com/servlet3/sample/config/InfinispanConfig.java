@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.DefaultResourceLoader;
 
-@Configuration
-@EnableCaching
+//@Configuration
+//@EnableCaching
 public class InfinispanConfig {
 	
 	@Bean
